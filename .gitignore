@@ -1,0 +1,57 @@
+# 如何忽略当前工程不必要的文件和文件夹
+
+# Xcode 项目文件
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+*.xcuserdata/
+
+# 构建产物
+build/
+DerivedData/
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.resolved
+
+# 日志和临时文件
+*.log
+*.tmp
+*.temp
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 敏感信息（证书、密钥等）
+*.p12
+*.mobileprovision
+*.key
+*.cer
+*.crt
+
+# 测试覆盖率
+*.coverage.txt
+*.gcda
+*.gcno
